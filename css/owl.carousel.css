@@ -1,0 +1,250 @@
+/* ======= Owl Controls ======= */
+.owl-buttons {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  margin-left: -13px;
+  bottom: -38px;
+}
+.owl-buttons .owl-prev {
+  background: url(../images/owl-control-left.png) no-repeat center -15px;
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  overflow: hidden;
+}
+.owl-buttons .owl-prev:hover {
+  background-position: center 0;
+}
+.owl-buttons .owl-next {
+  background: url(../images/owl-control-right.png) no-repeat center -15px;
+  display: inline-block;
+  margin-left: 10px;
+  width: 8px;
+  height: 15px;
+  overflow: hidden;
+}
+.owl-buttons .owl-next:hover {
+  background-position: center 0;
+}
+/* ======= Owl Item ======= */
+#owl1 .owl-item {
+  height: 291px;
+  text-align: center;
+}
+@media (max-width: 979px) {
+  #owl1 .owl-item {
+    height: 232px;
+  }
+}
+@media (max-width: 767px) {
+  #owl1 .owl-item {
+    height: 391px;
+  }
+}
+@media (max-width: 479px) {
+  #owl1 .owl-item {
+    height: 251px;
+  }
+}
+#owl1 .owl-item .item .wrapper {
+  position: relative;
+  background: #4c4949;
+}
+#owl1 .owl-item .item .wrapper a {
+  display: block;
+}
+#owl1 .owl-item .item .wrapper a:hover img {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#owl1 .owl-item .item .wrapper a:hover h3 {
+  color: #b72d21;
+}
+#owl1 .owl-item .item .wrapper a:hover h3:after {
+  background: #b72d21;
+}
+#owl1 .owl-item .item .wrapper a:hover h3:before {
+  background: #b72d21;
+}
+#owl1 .owl-item .item .wrapper img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #4c4949;
+  width: 100%;
+}
+#owl1 .owl-item .item .wrapper h3 {
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  left: 0;
+  right: 0;
+}
+#owl1 .owl-item h3 {
+  color: #b72d21;
+  position: relative;
+  padding: 31px 0 32px;
+}
+#owl1 .owl-item h3:before {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  display: block;
+  left: 50%;
+  margin-left: -15px;
+  top: 0;
+}
+#owl1 .owl-item h3:after {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: #ffffff;
+  display: block;
+  left: 50%;
+  margin-left: -15px;
+  bottom: 0;
+}
+@media (max-width: 979px) {
+  #owl1 .item {
+    padding: 2px;
+  }
+}
+@media (max-width: 767px) {
+  #owl1 .item img {
+    width: 100%;
+  }
+}
+#owl2 .item {
+  padding: 84px 0 0;
+  border-bottom: 1px solid #e1ebf4;
+}
+#owl2 .item1 {
+  background: url(../images/page1_img5.png) no-repeat center bottom;
+  background-size: contain;
+}
+@media (max-width: 767px) {
+  #owl2 .item1 {
+    background: none;
+  }
+}
+#owl2 .item2 {
+  background: url(../images/page1_img6.png) no-repeat center bottom;
+  background-size: contain;
+}
+@media (max-width: 767px) {
+  #owl2 .item2 {
+    background: none;
+  }
+}
+#owl2 .item3 {
+  background: url(../images/page1_img7.png) no-repeat center bottom;
+  background-size: contain;
+}
+@media (max-width: 767px) {
+  #owl2 .item3 {
+    background: none;
+  }
+}
+@media (max-width: 979px) {
+  #owl2 .owl-item {
+    overflow: hidden;
+  }
+}
+#owl2 .owl-item .wrapper .block1 {
+  padding-right: 50px;
+  margin-bottom: 37px;
+}
+#owl2 .owl-item .wrapper .block1 .name {
+  font: 400 48px/48px "Dancing Script", sans-serif;
+  color: #345a80;
+  margin-left: 2px;
+}
+#owl2 .owl-item .wrapper .block1 .who {
+  font: 400 20px/36px "Roboto Condensed", sans-serif;
+  color: #345a80;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  letter-spacing: 3px;
+}
+#owl2 .owl-item .wrapper .block1 .how-many {
+  font: 400 20px/20px "Roboto", sans-serif;
+  color: #c5c0a6;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+#owl2 .owl-item .wrapper .block1 .socials1 {
+  margin-top: 20px;
+}
+#owl2 .owl-item .wrapper .block2 {
+  margin-bottom: 20px;
+}
+#owl2 .owl-item .wrapper span {
+  display: block;
+}
+/* ======= Owl Common Styles ======= */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+.owl-carousel .owl-item {
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* fix */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}

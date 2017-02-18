@@ -1,0 +1,32 @@
+/* Stuck menu styles
+========================================================*/
+.isStuck {
+  z-index: 999;
+  position: fixed;
+  -webkit-box-shadow: 0 0 4px 0 #000000;
+  box-shadow: 0 0 4px 0 #000000;
+}
+.isStuck .sf-menu > li > .sf-with-ul:after {
+  bottom: 0;
+}
+.isStuck .sf-menu > li > a {
+  padding: 12px 0;
+}
+.isStuck .sf-menu .first.current a:before {
+  height: 38px;
+}
+.isStuck .sf-menu .first a:hover:before {
+  height: 38px;
+}
+.isStuck .sf-menu .last.current > a:before,
+.isStuck .sf-menu .last.sfHover > a:before {
+  height: 38px;
+}
+.isStuck .sf-menu .last > a:hover:before {
+  height: 38px;
+}
+@media only screen and (max-width: 979px) {
+  .isStuck {
+    display: none !important;
+  }
+}
