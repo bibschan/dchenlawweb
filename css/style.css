@@ -474,10 +474,30 @@ nav {
   background: #e1ebf4;
   color: #672d21;
 }
+
+.slicknav_menu{
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
-  .sf-menu {
+  .menu_item{
     display: none;
   }
+
+  .sf-menu {
+    width: 100%;
+    
+    /*display: none;*/
+  }
+
+  .slicknav_menu{
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: #672d21!important;
+  }
+
   nav {
     width: 100%;
     float: none;
