@@ -479,7 +479,16 @@ nav {
     display: none;
 }
 
+.selectLocale{
+/*desktop*/
+}
+
 @media only screen and (max-width: 767px) {
+/* mobile*/
+  .selectLocale{
+  
+  }
+
   .menu_item{
     display: none;
   }

@@ -35,15 +35,15 @@
               var msg_intellectual='msg_intellectual';
 
 
-              (".header_services").text(jQuery.i18n.prop(header_services));
-              (".msg_servicerange").text(jQuery.i18n.prop(msg_servicerange));
-              (".header_core").text(jQuery.i18n.prop(header_core));
-              (".msg_corporate").text(jQuery.i18n.prop(msg_corporate));
-              (".msg_family").text(jQuery.i18n.prop(msg_family));
-              (".msg_wills").text(jQuery.i18n.prop(msg_wills));
-              (".msg_civil").text(jQuery.i18n.prop(msg_civil));
-              (".msg_business").text(jQuery.i18n.prop(msg_business));
-              (".msg_intellectual").text(jQuery.i18n.prop(msg_intellectual));
+              $(".header_services").text(jQuery.i18n.prop(header_services));
+              $(".msg_servicerange").text(jQuery.i18n.prop(msg_servicerange));
+              $(".header_core").text(jQuery.i18n.prop(header_core));
+              $(".msg_corporate").text(jQuery.i18n.prop(msg_corporate));
+              $(".msg_family").text(jQuery.i18n.prop(msg_family));
+              $(".msg_wills").text(jQuery.i18n.prop(msg_wills));
+              $(".msg_civil").text(jQuery.i18n.prop(msg_civil));
+              $(".msg_business").text(jQuery.i18n.prop(msg_business));
+              $(".msg_intellectual").text(jQuery.i18n.prop(msg_intellectual));
 
 
         }

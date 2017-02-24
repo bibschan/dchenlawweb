@@ -28,14 +28,16 @@
               var header_about='header_about';
               var msg_abtdavid='msg_abtdavid';
               var header_experience='header_experience';
+              var msg_experience='msg_experience';
 
 
 
-              (".header_david").text(jQuery.i18n.prop(header_david));
-               (".header_about").text(jQuery.i18n.prop(header_about));
-              (".msg_abtdavid").text(jQuery.i18n.prop(msg_abtdavid));
-              (".header_experience").text(jQuery.i18n.prop(header_experience));
-              (".header_david").text(jQuery.i18n.prop(header_david));
+              $(".header_david").text(jQuery.i18n.prop(header_david));
+              $(".header_about").text(jQuery.i18n.prop(header_about));
+              $(".msg_abtdavid").text(jQuery.i18n.prop(msg_abtdavid));
+              $(".header_experience").text(jQuery.i18n.prop(header_experience));
+              $(".msg_experience").text(jQuery.i18n.prop(msg_experience));
+              
 
 
         }
