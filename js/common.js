@@ -1,3 +1,7 @@
+<link rel="stylesheet" type="text/css" href="../css/grid.css">
+<link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <script src="jquery.js"></script>
 <script src="jquery-migrate-1.2.1.js"></script>
 <script src="owl.carousel.js"></script>

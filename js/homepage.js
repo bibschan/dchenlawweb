@@ -2,10 +2,19 @@
 //                LOCALIZATION - START
 //========================================================
     $(document).ready(function () {
-        //loadBundles(jQuery.i18n.browserLang());
-        loadBundles("ko");
+        loadBundles(getLanguage());
     });
 
+        function getLanguage(){
+            var locale = localStorage.getItem("locale");
+            return locale;
+        }
+
+
+        function setLangague(selectLocale){
+            localStorage.setItem("locale", selectLocale.value);
+            loadBundles(getLanguage());
+        }
 
         function loadBundles(lang) {
             jQuery.i18n.properties({
@@ -39,10 +48,13 @@
             var msg_family='msg_family';
             var msg_business='msg_business';
             var msg_founded='msg_founded';
-            var msg_name='msg_name';
-            var msg_attorney='msg_attorney';
-            var msg_years='msg_years';
-            var msg_aboutd='msg_aboutd';
+            var msg_home='msg_home';
+            var msg_about='msg_about';
+            var msg_services='msg_services';
+            var msg_aboutdavid='msg_aboutdavid';
+            var msg_contacts='msg_contacts';
+
+    
             $(".msg_lawCorp").text(jQuery.i18n.prop(lawCorp));
             $(".msg_cont").text(jQuery.i18n.prop(cont));
             $(".msg_civil").text(jQuery.i18n.prop(msg_civil));
@@ -61,12 +73,18 @@
             $(".msg_family").text(jQuery.i18n.prop(msg_family));
             $(".msg_business").text(jQuery.i18n.prop(msg_business));
             $(".msg_founded").text(jQuery.i18n.prop(msg_founded));
-            $(".msg_name").text(jQuery.i18n.prop(msg_name));
-            $(".msg_attorney").text(jQuery.i18n.prop(msg_attorney));
-            $(".msg_years").text(jQuery.i18n.prop(msg_years));
-            $(".msg_aboutd").text(jQuery.i18n.prop(msg_aboutd));
+            $(".msg_home").text(jQuery.i18n.prop(msg_home));
+            $(".msg_about").text(jQuery.i18n.prop(msg_about));
+            $(".msg_services").text(jQuery.i18n.prop(msg_services));
+            $(".msg_aboutdavid").text(jQuery.i18n.prop(msg_aboutdavid));
+            $(".msg_contacts").text(jQuery.i18n.prop(msg_contacts));
+           
 
         }
+
+
+
+       
 //========================================================
 //                LOCALIZATION - END
 //========================================================
