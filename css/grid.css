@@ -157,6 +157,7 @@ table {
 .row:after {
   clear: both;
 }
+
 [class*="grid_"] {
   float: left;
   min-height: 1px;
