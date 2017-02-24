@@ -5,12 +5,6 @@
         loadBundles(getLanguage());
     });
 
-        function getLanguage(){
-            var locale = localStorage.getItem("locale");
-            return locale;
-        }
-
-
         function setLangague(selectLocale){
             localStorage.setItem("locale", selectLocale.value);
             loadBundles(getLanguage());
@@ -30,8 +24,11 @@
 
         function loadHomePage() {
             // Accessing values through the map
-            var lawCorp = 'msg_lawCorp';
+            
+            populateGlobals();
+
             var cont = 'msg_cont';
+
             var msg_civil = 'msg_civil';
             var text_civil = 'text_civil';
             var msg_immi = 'msg_immi';
@@ -48,14 +45,7 @@
             var msg_family='msg_family';
             var msg_business='msg_business';
             var msg_founded='msg_founded';
-            var msg_home='msg_home';
-            var msg_about='msg_about';
-            var msg_services='msg_services';
-            var msg_aboutdavid='msg_aboutdavid';
-            var msg_contacts='msg_contacts';
-
-    
-            $(".msg_lawCorp").text(jQuery.i18n.prop(lawCorp));
+        
             $(".msg_cont").text(jQuery.i18n.prop(cont));
             $(".msg_civil").text(jQuery.i18n.prop(msg_civil));
             $(".text_civil").text(jQuery.i18n.prop(text_civil));
@@ -73,11 +63,6 @@
             $(".msg_family").text(jQuery.i18n.prop(msg_family));
             $(".msg_business").text(jQuery.i18n.prop(msg_business));
             $(".msg_founded").text(jQuery.i18n.prop(msg_founded));
-            $(".msg_home").text(jQuery.i18n.prop(msg_home));
-            $(".msg_about").text(jQuery.i18n.prop(msg_about));
-            $(".msg_services").text(jQuery.i18n.prop(msg_services));
-            $(".msg_aboutdavid").text(jQuery.i18n.prop(msg_aboutdavid));
-            $(".msg_contacts").text(jQuery.i18n.prop(msg_contacts));
            
 
         }

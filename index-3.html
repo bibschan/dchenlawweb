@@ -4,11 +4,26 @@
     <title>Practice</title>
     <meta charset="utf-8">
     <meta name = "format-detection" content = "telephone=no" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
+     <meta name = "format-detection" content = "telephone=no" />
+    <meta name="description" content="D.chen Law Corporation">
+    <meta name="keywords" content="law, civil law, lawyer, conveyance, business law, business, family law, divorce, canada, new westminster, vancouver, richmond, chinese, korean, contract, lawsuit">
+    <meta name="author" content="Bibiana Marocco de Souza">
+  <!--  <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <link rel="import" href="js/common.js">
+    <script src="js/davidpage.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl3").owlCarousel({
+                items : 1, //10 items above 1000px browser width
+                itemsDesktop : [1199,1], //5 items between 1000px and 901px
+                itemsDesktopSmall : [767, 1], // betweem 900px and 601px
+                itemsTablet: [700, 1], //2 items between 600 and 0
+                itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+                navigation : true,
+                pagination : false
+            });
+        });
+    </script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -28,13 +43,13 @@
     <div id="stuck_container">
         <nav>
             <ul class="sf-menu">
-                <li class="first"><a href="index.html">Home</a></li>
-                <li><a href="index-1.html">About</a></li>
-                <li><a href="index-2.html">Services</a>
+                <li class="first"><a class="msg_home" href="index.html">Home</a></li>
+                <li class="index-1.html"><a class="msg_about" href="index-1.html">About</a></li>
+                <li><a class="msg_services" href="index-2.html">Services</a>
                     
                 </li>
-                <li class="current"><a href="index-3.html">About David</a></li>
-                <li class="last"><a href="index-4.html">Contacts</a></li>
+                <li class="current"><a class="msg_aboutdavid" href="index-3.html">About David</a></li>
+                <li class="last"><a class="msg_contacts" href="index-4.html">Contacts</a></li>
             </ul>
             <div class="clearfix"></div>
         </nav>
@@ -44,8 +59,8 @@
             <div class="grid_12">
                 <h1>
                     <a href="index.html">
-                        <span class="main">D.CHEN</span><br>
-                        <span class="secondary"> Law Corporation</span>
+                        <span class="main msg_dchen">D.CHEN</span><br>
+                        <span class="secondary msg_lawCorp">LAW CORPORATION</span>
                     </a>
                 </h1>
             </div>
@@ -61,7 +76,7 @@
         <div class="wrapper7">
             <div class="row">
                 <div class="grid_12">
-                    <h2><strong>David </strong></h2>
+                    <h2 class="header_david"><strong>David </strong></h2>
                 </div>
             </div>
 
@@ -71,8 +86,8 @@
                     <div class="post6">
                         <img src="images/page4_img1.png" alt=""/>
                         <img src="images/page4_img2.png" alt=""/>
-                        <h3><a href="#">About David Chen</a></h3>
-                        <p>David is an avid traveller. He travels annually to Asia and he has been to most provinces in China. He has also travelled to other Asian countries including Japan, South Korea, Singapore, and Malaysia. At home, he has also travelled extensively in Canada. Proudly, he has been to all provinces and territories of Canada except Nunavut.</p>
+                        <h3 class="header_about"><a href="#">About David Chen</a></h3>
+                        <p class="msg_abtdavid">David is an avid traveller. He travels annually to Asia and he has been to most provinces in China. He has also travelled to other Asian countries including Japan, South Korea, Singapore, and Malaysia. At home, he has also travelled extensively in Canada. Proudly, he has been to all provinces and territories of Canada except Nunavut.</p>
                     </div>
                 </div>
             </div>
@@ -80,7 +95,7 @@
             <div class="wrapper5 wrapper7">
                 <div class="row">
                     <div class="grid_12">
-                        <h2><strong>Experience with Law</strong></h2>
+                        <h2 class="header_experience"><strong>Experience with Law</strong></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -90,7 +105,7 @@
                                 <div class="grid_4">
                                     <div class="block1">
                                         <h3><a href="#">Education</a></h3>
-                                        <p>David obtained his Juris Doctor (J.D.) degree from the University of Ottawa with the honor of Cum Laude. Prior to the commencement of his legal career, he worked at the Department of Health of the Federal Government of Canada for four years, where he developed expertise and accumulated knowledge of the food and drug laws in Canada. For his science undergraduate degree from the University of British Columbia, he specialized in Cell Biology and Genetics with a Minor in Commerce.</p>
+                                        <p class="msg_experience">David obtained his Juris Doctor (J.D.) degree from the University of Ottawa with the honor of Cum Laude. Prior to the commencement of his legal career, he worked at the Department of Health of the Federal Government of Canada for four years, where he developed expertise and accumulated knowledge of the food and drug laws in Canada. For his science undergraduate degree from the University of British Columbia, he specialized in Cell Biology and Genetics with a Minor in Commerce.</p>
                                         
                                     </div>
                                 </div>
