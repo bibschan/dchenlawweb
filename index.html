@@ -31,24 +31,31 @@
                 <li class="current first menu_item"><a class="msg_home" href="index.html">Home</a></li>
                 <li class="menu_item"><a class="msg_about"    href="index-1.html">About</a></li>
                 <li class="menu_item"><a class="msg_services" href="index-2.html">Services</a>
-                    
+                    <li class="menu_item"></li>
                 </li>
                 <li class="menu_item"><a class="msg_aboutdavid" href="index-3.html">About David</a></li>
                 <li class="last menu_item"><a class="msg_contacts" href="index-4.html">Contacts</a></li>
+
             </ul>
             <div class="clearfix"></div>
         </nav>
     </div>
    		 <div class="container">
-<!--
-    	<div id="rowlogo" class="row">
-    			
-   		 </div>
-   		 -->
 
+    	
+   		
+    <div class="localeContainer">
+        <select class="selectLocale" onchange="setLangague(this)">
+            <option>Language</option>
+              <option value="">English</option>
+              <option value="ko">Korean</option>
+              <option value="zh">Chinese</option>
+        </select>
+    </div>
 
         <div class="row">
             <div class="grid_12">
+            <div id="rowlogo"></div>
                 <h1>
                     <a href="index.html">
                         <span class="main">D.CHEN</span><br>
@@ -62,13 +69,7 @@
                 <div class="title1 msg_cont">
                     REALIZE YOUR CONSTITUTIONAL<br>RIGHT WITH QUALIFIED HELP
                 </div>
-                <div class="title1">
-                    <select class="selectLocale" onchange="setLangague(this)">
-                      <option value="">English</option>
-                      <option value="ko">Korean</option>
-                      <option value="zh">Chinese</option>
-                    </select>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -242,8 +243,7 @@
                         <a href="index.html">
                             <span class="main msg_lawCorp">D.CHEN LAW CORPORATION</span><br>
                         </a>
-                            <span class="secondary">&copy; <span id="copyright-year"></span> | <a href="index-5.html">all rights reserved to d.chen law corporation</a></span>
-
+                            <span class="secondary">&copy; <span id="copyright-year"></span> 
 
                     
                 </div>
