@@ -1,9 +1,12 @@
 <link rel="stylesheet" type="text/css" href="../css/grid.css">
 <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" href="../css/slicknav.css" />
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 <script src="jquery.js"></script>
 <script src="jquery-migrate-1.2.1.js"></script>
 <script src="owl.carousel.js"></script>
+<script src="jquery.slicknav.js"></script>
 <script src="jquery.i18n.properties.js"></script>
 <script>
     $(document).ready(function () {
@@ -25,6 +28,10 @@
             itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
             navigation : true,
             pagination : false
+        });
+
+        $('.sf-menu').slicknav({
+                prependTo:'.sf-menu'
         });
     });
 
