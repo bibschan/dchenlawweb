@@ -241,9 +241,10 @@ h1 .secondary {
   font: 300 36px/48px "Cambria", sans-serif;
   color: black;
   text-transform: uppercase;
-  position: relative;
+  position: all;
   padding: 0px 0 17px;
   letter-spacing: 3px;
+  float: right;
 }
 
 @media (max-width: 479px) {
@@ -944,7 +945,7 @@ nav {
   padding: 27px 0 10px 15px;
 }
 .blockquote1:before {
-  content: '“';
+  content: '';
   display: block;
   position: absolute;
   top: 12px;

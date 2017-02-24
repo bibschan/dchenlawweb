@@ -144,6 +144,10 @@ table {
 .row {
   margin-left: -20px;
 }
+.topContainer
+{
+  width: 775px;
+}
 .row:before,
 .row:after {
   display: table;
