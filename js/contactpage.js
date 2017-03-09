@@ -27,13 +27,14 @@
               var header_contact='header_contact';
               var msg_adress='msg_adress';
               var msg_satellite='msg_satellite';
-
+              var msg_lawcorp2='msg_lawcorp2';
 
 
 
               $(".header_contact").text(jQuery.i18n.prop(header_contact));
               $(".msg_adress").text(jQuery.i18n.prop(msg_adress));
               $(".msg_satellite").text(jQuery.i18n.prop(msg_satellite));
+              $(".msg_lawcorp2").text(jQuery.i18n.prop(msg_lawcorp2));
 
               
 

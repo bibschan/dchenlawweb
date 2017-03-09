@@ -45,7 +45,7 @@
             var msg_family='msg_family';
             var msg_business='msg_business';
             var msg_founded='msg_founded';
-            var msg_cont2='msg_cont2';
+            var msg_lawcorp2='msg_lawcorp2';
 
         
             $(".msg_cont").text(jQuery.i18n.prop(cont));
@@ -65,7 +65,8 @@
             $(".msg_family").text(jQuery.i18n.prop(msg_family));
             $(".msg_business").text(jQuery.i18n.prop(msg_business));
             $(".msg_founded").text(jQuery.i18n.prop(msg_founded));
-             $(".msg_cont2").text(jQuery.i18n.prop(msg_cont2));
+            $(".msg_lawcorp2").text(jQuery.i18n.prop(msg_lawcorp2));
+  
            
 
         }

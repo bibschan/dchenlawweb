@@ -30,7 +30,7 @@
               var header_experience='header_experience';
               var msg_experience='msg_experience';
               var header_education='header_education';
-
+              var msg_lawcorp2='msg_lawcorp2';
 
               $(".header_david").text(jQuery.i18n.prop(header_david));
               $(".header_about").text(jQuery.i18n.prop(header_about));
@@ -38,7 +38,7 @@
               $(".header_experience").text(jQuery.i18n.prop(header_experience));
               $(".msg_experience").text(jQuery.i18n.prop(msg_experience));
               $(".header_education").text(jQuery.i18n.prop(header_education));
-
+              $(".msg_lawcorp2").text(jQuery.i18n.prop(msg_lawcorp2));
 
         }
 
