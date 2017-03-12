@@ -144,6 +144,10 @@ table {
 .row {
   margin-left: -20px;
 }
+.topContainer
+{
+  width: 775px;
+}
 .row:before,
 .row:after {
   display: table;
@@ -153,6 +157,7 @@ table {
 .row:after {
   clear: both;
 }
+
 [class*="grid_"] {
   float: left;
   min-height: 1px;
@@ -176,6 +181,10 @@ table {
 .grid_8 {
   width: 620px;
 }
+.gridalign {
+  padding-left: 200px;
+  width: 620px;
+}
 .grid_7 {
   width: 540px;
 }
@@ -189,7 +198,7 @@ table {
   width: 300px;
 }
 .grid_3 {
-  width: 220px;
+  width: 200px;
 }
 .grid_2 {
   width: 140px;

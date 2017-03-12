@@ -33,7 +33,7 @@
               var msg_fullrange2='msg_fullrange2';
               var msg_mission='msg_mission';
               var msg_deliver='msg_deliver';
-
+              var msg_lawcorp2='msg_lawcorp2';
 
 
 
@@ -48,7 +48,7 @@
             $(".msg_fullrange2").text(jQuery.i18n.prop(msg_fullrange2));
             $(".msg_mission").text(jQuery.i18n.prop(msg_mission));
             $(".msg_deliver").text(jQuery.i18n.prop(msg_deliver));
-
+            $(".msg_lawcorp2").text(jQuery.i18n.prop(msg_lawcorp2));
 
         }
 

@@ -32,11 +32,13 @@ a:hover {
 }
 #rowlogo
   {
-      width: 100%;
-      height: 300px;
-      background-image: url('../images/logo.jpg');
-      background-size: 800px 300px;
+      width: 200px;
+      height: 200px;
+      background-image: url('../images/logochen.jpg');
+      background-size: 200px 200px;
       background-repeat: no-repeat;
+      float: left;
+      
   }
 img {
   max-width: 100%;
@@ -51,7 +53,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  padding-top: 26px;
+  padding-top: 20px;
   letter-spacing: 4px;
 }
 @media (max-width: 767px) {
@@ -67,7 +69,7 @@ h2:before {
   content: '';
   width: 30px;
   height: 3px;
-  background: #c5c0a6;
+  background: white;
   display: block;
   left: 50%;
   margin-left: -15px;
@@ -148,7 +150,7 @@ h6 {
 /* ======= Wrappers ======= */
 .wrapper1 {
   padding: 81px 0 145px;
-  background: url(../images/lawimage.jpg) no-repeat center;
+  background: url('../images/warriorbanner.jpg') no-repeat center;
   background-size: cover;
 }
 @media (max-width: 767px) {
@@ -166,6 +168,7 @@ h6 {
 .wrapper7 {
   border-bottom: 1px solid #e1ebf4;
 }
+
 .wrapper8 {
   padding-top: 33px;
   padding-bottom: 103px;
@@ -174,6 +177,14 @@ h6 {
 .wrapper9 {
   padding-bottom: 57px;
   border-bottom: 1px solid #e1ebf4;
+}
+.serviceforlawyers
+{
+  text-align: justify;
+}
+.serviceforlawyers2
+{
+  text-align: center;
 }
 /*========================================================
                     HEADER styles
@@ -202,7 +213,16 @@ h1 .main {
   display: inline-block;
   font: 400 50px/150px "Cambria", sans-serif;
   color: #4c4949;
+  }
+.main1
+{
+    display: block;
+  font: 400 50px/70px "Cambria", sans-serif;
+  color: #4c4949;
+
+  }
 }
+
 @media (max-width: 480px) {
   h1 .main {
     font: 400 80px/80px "Cambria", sans-serif;
@@ -226,17 +246,54 @@ h1 .secondary {
   margin-top: 31px;
   margin-bottom: 36px;
   text-align: center;
-  font: 300 36px/48px "Cambria", sans-serif;
-  color: black;
+  font: 300 28px/48px "Cambria", sans-serif;
+  color: #672d21;
   text-transform: uppercase;
   position: relative;
   padding: 25px 0 27px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  text-align: justify;
+  padding-bottom: 100px;
 }
+
+.localeContainer{
+  text-align: center;
+  font: 300 36px/48px "Cambria", sans-serif;
+  color: black;
+  text-transform: uppercase;
+  position: all;
+  padding: 0px 0 17px;
+  letter-spacing: 3px;
+  float: right;
+}
+
 @media (max-width: 479px) {
   .title1 {
     font-size: 28px;
     line-height: 38px;
+  }
+    .localeContainer {
+    width: 100%;
+    font-size: 28px;
+    line-height: 25px;
+  }
+  .localeContainer:before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 0px;
+  background: #c5c0a6;
+  display: block;
+  left: 50%;
+  margin-left: -15px;
+  top: 0;
+  }
+
+  .localeContainer:before {
+  display: none!important;
+  }
+.localeContainer:after {
+  display: none!important;
   }
 }
 .title1:before {
@@ -244,7 +301,7 @@ h1 .secondary {
   content: '';
   width: 30px;
   height: 3px;
-  background: #c5c0a6;
+  background: white;
   display: block;
   left: 50%;
   margin-left: -15px;
@@ -261,6 +318,30 @@ h1 .secondary {
   bottom: 0;
   margin-left: -15px;
 }
+
+.localeContainer:before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: #c5c0a6;
+  display: block;
+  left: 50%;
+  margin-left: -15px;
+  top: 0;
+}
+.localeContainer:after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 3px;
+  background: #c5c0a6;
+  display: block;
+  left: 50%;
+  bottom: 0;
+  margin-left: -15px;
+}
+
 /* ======= Main menu variables ======= */
 /* ======= Sub menus common variables ======= */
 /* ======= First level sub menu variables ======= */
@@ -302,7 +383,7 @@ nav {
   margin-left: -3px;
 }
 .sf-menu > li a {
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 .sf-menu > li > a {
   padding: 24px 0;
@@ -481,12 +562,36 @@ nav {
 
 .selectLocale{
 /*desktop*/
+      width: 200px;
+      height: 30px;
+      text-align: center;
+    background-color: #672d21;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
+
+
+/* Dropdown Content (Hidden by Default) */
+.selectLocale-content {
+        width: 200px;
+      height: 30px;
+      text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
 
 @media only screen and (max-width: 767px) {
 /* mobile*/
   .selectLocale{
-  
+    width: 100%;
   }
 
   .menu_item{
@@ -813,6 +918,7 @@ nav {
 .post3 {
   margin-top: 23px;
   margin-bottom: 32px;
+  text-align: justify;
 }
 .post3 img {
   margin-top: 5px;
@@ -860,7 +966,7 @@ nav {
   padding: 27px 0 10px 15px;
 }
 .blockquote1:before {
-  content: '“';
+  content: '';
   display: block;
   position: absolute;
   top: 12px;
@@ -926,6 +1032,22 @@ nav {
   .post5 {
     margin-bottom: 40px;
   }
+}
+.listp{
+  font-size: 16px;
+  letter-spacing: 1px;
+  font: 400 16px/28px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    
+}
+.header_core
+{
+  padding-top: 50px;
+  font-size: 28px;
+}
+.h2pad
+{
+  padding-bottom: 50px;
 }
 .post5 h3 {
   color: #672d21;

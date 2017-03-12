@@ -2,16 +2,28 @@
 <html lang="en">
 <head>
     <title>Contacts</title>
-    <meta charset="utf-8">
+ <meta charset="utf-8">
     <meta name = "format-detection" content = "telephone=no" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact-form.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-    <script src="js/TMForm.js"></script>
-    <script src="js/modal.js"></script>
+     <meta name = "format-detection" content = "telephone=no" />
+    <meta name="description" content="D.chen Law Corporation">
+    <meta name="keywords" content="law, civil law, lawyer, conveyance, business law, business, family law, divorce, canada, new westminster, vancouver, richmond, chinese, korean, contract, lawsuit">
+    <meta name="author" content="Bibiana Marocco de Souza">
+  <link rel="icon" href="images/logochen.jpg" type="image/x-icon"> 
+    <link rel="import" href="js/common.js">
+    <script src="js/contactpage.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl3").owlCarousel({
+                items : 1, //10 items above 1000px browser width
+                itemsDesktop : [1199,1], //5 items between 1000px and 901px
+                itemsDesktopSmall : [767, 1], // betweem 900px and 601px
+                itemsTablet: [700, 1], //2 items between 600 and 0
+                itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+                navigation : true,
+                pagination : false
+            });
+        });
+    </script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -31,13 +43,13 @@
     <div id="stuck_container">
         <nav>
             <ul class="sf-menu">
-                <li class="current first menu_item"><a class="msg_home" href="index.html">Home</a></li>
-                <li class="menu_item"><a class="msg_about"    href="index-1.html">About</a></li>
+                <li class="first menu_item"><a class="msg_home" href="index.html">Home</a></li>
+                <li class="menu_item"><a class="msg_about"    href="index-1.html">About us</a></li>
                 <li class="menu_item"><a class="msg_services" href="index-2.html">Services</a>
                     
                 </li>
-                <li class="menu_item"><a class="msg_aboutdavid" href="index-3.html">About David</a></li>
-                <li class="last menu_item"><a class="msg_contacts" href="index-4.html">Contacts</a></li>
+                <li class="menu_item"><a class="msg_aboutdavid" href="index-3.html">Service for Lawyers</a></li>
+                <li class="current last menu_item"><a class="msg_contacts" href="index-4.html">Contacts</a></li>
             </ul>
             <div class="clearfix"></div>
         </nav>
@@ -47,8 +59,8 @@
             <div class="grid_12">
                 <h1>
                     <a href="index.html">
-                        <span class="main">D.CHEN</span><br>
-                        <span class="secondary"> Law Corporation</span>
+                        <span class="main msg_dchen">D.CHEN</span><br>
+                        <span class="secondary msg_lawCorp">LAW CORPORATION</span>
                     </a>
                 </h1>
             </div>
@@ -64,7 +76,7 @@
         <div class="wrapper7">
             <div class="row">
                 <div class="grid_12">
-                    <h2><strong>Contact information</strong></h2>
+                    <h2 class="header_contact"><strong>Contact information</strong></h2>
                 </div>
             </div>
             <div class="row">
@@ -72,15 +84,15 @@
                     <div class="google-map_contacts">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5070.3387378507!2d-122.92418656456461!3d49.213143247986636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548677deebece5fb%3A0x6d30c22c60fa5f68!2s704+Sixth+St%2C+New+Westminster%2C+BC+V3L+3C5!5e0!3m2!1sen!2sca!4v1486446692919" style="border:0"></iframe>
                     </div>
-                    <p>Our main office is located in downtown New Westminster, at 6th Street with 7th Avenue.</p>
+                    <p class="msg_adress">Our main office is located in downtown New Westminster, at 6th Street with 7th Avenue.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="grid_12">
                     <div class="google-map_contacts">
-                        <iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11938.33057014237!2d-123.1273170558759!3d49.197348901944615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548674e350a6a145%3A0x88ec545089fac4bf!2s10013+River+Dr%2C+Richmond%2C+BC+V6X+1Z2!5e0!3m2!1sen!2sca!4v1486446601489" style="border:0"></iframe>
+                        <img src="images/richmondmap.jpg">
                     </div>
-                    <p>Our Satellite office is located in Richmond, at 10013 River Drive.</p>
+                    <p class="msg_satellite">Our alternate office is located in Richmond, at 10013 River Drive.</p>
                 </div>
             </div>
             <div class="row">
@@ -96,8 +108,8 @@
                 </div>
                 <div class="grid_3">
                     <address class="phones">
-                        (chinese) 604-721-7766 <br>
-                         (korean) <br /> 778-835-4087 
+                        中文/English <br /> 604-721-7766 <br />
+                         한국어/English <br /> 778-835-4087 
                     </address>
                 </div>
                 <div class="grid_4">
@@ -108,7 +120,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+<!--     <div class="container">
         <div class="wrapper5 wrapper7">
             <div class="row">
                 <div class="grid_12">
@@ -147,7 +159,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                            <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> 
                             <div class="contact-form-buttons">
                                 <a href="#" data-type="submit" class="btn-default">Send Message</a>
                             </div>
@@ -169,7 +181,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <!--========================================================
@@ -182,10 +194,11 @@
                 <div class="grid_12">
                     <h1>
                         <a href="index.html">
-                            <span class="main">D.CHEN</span><br>
+                            <span class="secondary msg_lawcorp2">D.Chen Law Corporation</span><br>
                         </a>
-                        <span class="secondary">&copy; <span id="copyright-year"></span> | <a href="index-5.html">Privacy policy</a></span>
-                    </h1>
+                            <span class="secondary">&copy; <span id="copyright-year"></span> 
+
+                    
                 </div>
             </div>
         </div>
