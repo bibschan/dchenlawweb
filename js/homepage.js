@@ -27,8 +27,7 @@
             
             populateGlobals();
 
-            var cont = 'msg_cont';
-
+            var msg_cont = 'msg_cont';
             var msg_civil = 'msg_civil';
             var text_civil = 'text_civil';
             var msg_immi = 'msg_immi';
@@ -46,9 +45,14 @@
             var msg_business='msg_business';
             var msg_founded='msg_founded';
             var msg_lawcorp2='msg_lawcorp2';
+            var msg_inquiries='msg_inquiries';
+            var msg_conveyancematters = 'msg_conveyancematters';
 
-        
-            $(".msg_cont").text(jQuery.i18n.prop(cont));
+
+
+
+
+            $(".msg_cont").text(jQuery.i18n.prop(msg_cont));
             $(".msg_civil").text(jQuery.i18n.prop(msg_civil));
             $(".text_civil").text(jQuery.i18n.prop(text_civil));
             $(".msg_immi").text(jQuery.i18n.prop(msg_immi));
@@ -66,8 +70,8 @@
             $(".msg_business").text(jQuery.i18n.prop(msg_business));
             $(".msg_founded").text(jQuery.i18n.prop(msg_founded));
             $(".msg_lawcorp2").text(jQuery.i18n.prop(msg_lawcorp2));
-  
-           
+            $(".msg_inquiries").text(jQuery.i18n.prop(msg_inquiries));
+            $(".msg_conveyancematters").text(jQuery.i18n.prop(msg_conveyancematters));
 
         }
 
