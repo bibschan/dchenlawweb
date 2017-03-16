@@ -46,6 +46,28 @@ img {
 * {
   -webkit-text-size-adjust: none;
 }
+
+#gallery
+{
+height: 600px;
+width: 700px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 30px;
+padding-bottom: 400px;
+}
+
+td {
+    padding: 25px;
+    text-align: left;
+}
+.imgrow
+{
+height: 290px;
+width: 500px;
+margin-left: auto;
+margin-right: auto;
+}
 /* ======= Headers ======= */
 h2 {
   font: 400 36px/48px "Roboto Condensed", sans-serif;
@@ -592,6 +614,14 @@ nav {
 /* mobile*/
   .selectLocale{
     width: 100%;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .topContainer{
+    float: left;
   }
 
   .menu_item{
