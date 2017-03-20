@@ -172,7 +172,7 @@ h6 {
 /* ======= Wrappers ======= */
 .wrapper1 {
   padding: 81px 0 145px;
-  background: url('../images/warriorbanner.jpg') no-repeat center;
+  background: url('../images/gallery5.jpg') no-repeat center;
   background-size: cover;
 }
 @media (max-width: 767px) {
@@ -399,7 +399,7 @@ nav {
   text-decoration: none;
   cursor: default;
   content: "\f0d7";
-  color: #672d21;
+  color: #f33d08;
   bottom: 5px;
   left: 50%;
   margin-left: -3px;
@@ -414,18 +414,18 @@ nav {
   display: block;
   -webkit-transition: 0 all ease;
   transition: 0 all ease;
-  color: #672d21;
+  color: #f33d08;
 }
 .sf-menu > li > a:hover {
-  background: #672d21;
+  background: #f33d08;
   color: #ffffff;
 }
 .sf-menu > li > a:active {
-  background: #672d21;
+  background: #f33d08;
   color: #ffffff;
 }
 .sf-menu > li + li {
-  border-left: 1px solid #e1ebf4;
+  border-left: 1px solid #ffffff;
 }
 .sf-menu .first.current > a {
   position: relative;
@@ -433,7 +433,7 @@ nav {
 .sf-menu .first.current > a:before {
   display: block;
   content: '';
-  background: #672d21;
+  background: #f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -446,7 +446,7 @@ nav {
 .sf-menu .first > a:hover:before {
   display: block;
   content: '';
-  background: #672d21;
+  background: #f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -461,7 +461,7 @@ nav {
 .sf-menu .last.sfHover > a:before {
   display: block;
   content: '';
-  background: #672d21;
+  background: #f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -474,7 +474,7 @@ nav {
 .sf-menu .last > a:hover:before {
   display: block;
   content: '';
-  background: #672d21;
+  background: #f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -486,14 +486,14 @@ nav {
 }
 .sf-menu > li.current > a {
   color: #ffffff;
-  background: #672d21;
+  background: #f33d08;
 }
 .sf-menu > li.current > .sf-with-ul:after {
   color: #ffffff;
 }
 .sf-menu > li.sfHover > a {
   color: #ffffff;
-  background: #672d21;
+  background: #f33d08;
 }
 /* First level sub-menu styles
 ========================================================*/
@@ -505,7 +505,7 @@ nav {
   width: 218px;
   font: 700 14px/26px "Roboto Condensed", sans-serif;
   position: absolute;
-  background: #672d21;
+  background: #f33d08;
   text-align: left;
   padding: 18px 0 32px 0;
   z-index: 2;
@@ -541,14 +541,14 @@ nav {
   background: #ffffff;
 }
 .sf-menu ul > .sfHover > a {
-  color: #672d21;
+  color: #f33d08;
   background: #ffffff;
 }
 .sf-menu ul > .sfHover > a:after {
-  color: #672d21;
+  color: #f33d08;
 }
 .sf-menu ul li.sfHover > a {
-  color: #672d21;
+  color: #f33d08;
   background: #ffffff;
 }
 /* Second level sub-menu styles
@@ -558,7 +558,7 @@ nav {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  background: #672d21;
+  background: #f33d08;
   padding: 0 0 46px 0;
   z-index: 18;
   text-align: left;
@@ -575,7 +575,7 @@ nav {
 }
 .sf-menu ul ul li a:hover {
   background: #e1ebf4;
-  color: #672d21;
+  color: #f33d08;
 }
 
 .slicknav_menu{
@@ -587,7 +587,7 @@ nav {
       width: 200px;
       height: 30px;
       text-align: center;
-    background-color: #672d21;
+    background-color: #f33d08;
     color: white;
     font-size: 16px;
     border: none;
@@ -597,12 +597,12 @@ nav {
 
 /* Dropdown Content (Hidden by Default) */
 .selectLocale-content {
-        width: 200px;
-      height: 30px;
-      text-align: center;
+    width: 200px;
+    height: 30px;
+    text-align: center;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #672d21;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -836,7 +836,7 @@ nav {
 .post2 .block3 a {
   position: relative;
   display: block;
-  background: #c5c0a6;
+  background: #f33d08;
   color: #672d21;
   padding-left: 32px;
   padding-top: 12px;
@@ -846,7 +846,7 @@ nav {
   transition: all 0.3s ease;
 }
 .post2 .block3 a:hover {
-  background: #e1ebf4;
+  background: #c5c0a6;
 }
 .post2 .block3 a:after {
   position: absolute;
@@ -865,7 +865,7 @@ nav {
   letter-spacing: 2px;
 }
 .post2 .font1 {
-  color: #672d21;
+  color: white;
 }
 .post2 .call-us {
   margin-top: 3px;

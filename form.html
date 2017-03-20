@@ -9,10 +9,10 @@
     <meta name="keywords" content="law, civil law, lawyer, conveyance, business law, business, family law, divorce, canada, new westminster, vancouver, richmond, chinese, korean, contract, lawsuit">
     <meta name="author" content="Bibiana Marocco de Souza">
   <link rel="icon" href="images/logochen.jpg" type="image/x-icon"> 
+  <link rel="stylesheet" type="text/css" href="css/contact-form.css">
     <link rel="import" href="js/common.js">
 
 
-    
 <!-- linking css  -->
 
     <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -25,7 +25,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/superfish-menu.css">
     <link rel="stylesheet" type="text/css" href="css/ui.totop.css">
-
 
     
     <script src="js/contactpage.js"></script>
@@ -65,7 +64,7 @@
                 <li class="menu_item"><a class="msg_about"    href="about.html">About us</a></li>
                 <li class="menu_item"><a class="msg_services" href="services.html">Services</a> </li>
                 <li class="menu_item"><a class="msg_aboutdavid" href="service-for-lawyers.html">Service for Lawyers</a></li>
-                <li class="current last menu_item"><a class="msg_contacts" href="contact.html">Contact</a></li>
+                <li class="last menu_item"><a class="msg_contacts" href="contact.html">Contact</a></li>
             </ul>
             <div class="clearfix"></div>
         </nav>
@@ -87,63 +86,80 @@
 <!--========================================================
                           CONTENT
 =========================================================-->
-<section id="content">
-    <div class="container">
-        <div class="wrapper7">
+   <div class="container">
+        <div class="wrapper5 wrapper7">
             <div class="row">
                 <div class="grid_12">
-                    <h2 class="header_contact"><strong>Contact information</strong></h2>
+                    <h2><strong>send us your questions</strong></h2>
                 </div>
             </div>
             <div class="row">
                 <div class="grid_12">
-                    <div class="google-map_contacts">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5070.3387378507!2d-122.92418656456461!3d49.213143247986636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548677deebece5fb%3A0x6d30c22c60fa5f68!2s704+Sixth+St%2C+New+Westminster%2C+BC+V3L+3C5!5e0!3m2!1sen!2sca!4v1486446692919" style="border:0"></iframe>
-                    </div>
-                    <p class="msg_adress">Our main office is located in downtown New Westminster, at 6th Street with 7th Avenue.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="grid_12">
-                    <div class="google-map_contacts">
-                        <img src="images/richmondmap.jpg">
-                    </div>
-                    <p class="msg_satellite">Our alternate office is located in Richmond, at 10013 River Drive.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="grid_4">
-                    <address class="location">
-                       5, 704 6th Street,<br>New Westminster, V3L 3C5.
-                    </address>
-                </div>
-                <div class="grid_4">
-                    <address class="location">
-                       2030, 10013 River Drive,<br>Richmond, V6X 1Z2.
-                    </address>
-                </div>
-                <div class="grid_3">
-                    <address class="phones">
-                        中文    <br /> 604-721-7766 <br />
-                         한국어 <br /> 778-835-4087 
-                    </address>
-                </div>
-                <div class="grid_4">
-                    <address class="mail">
-                        <a href="mailto:david@dchenlawcorp.com">david@dchenlawcorp.com</a>
-                    </address>
+                    <form id="contact-form" action="email.php" method="post">
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+                            <div class="row">
+                                <div class="grid_5">
+                                    <label class="name">
+                                        <input type="text" name="name" placeholder="Name:" data-constraints="@Required @JustLetters" />
+                                        <span class="empty-message">*This field is required.</span>
+                                    </label>
+                                    <label class="email">
+                                        <input type="text" name="email" placeholder="E-mail:" value=""
+                                               data-constraints="@Required @Email" />
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid email.</span>
+                                    </label>
+                                    <label class="phone">
+                                        <input type="text" name="phone" placeholder="Phone:" value=""
+                                               data-constraints="@Required @JustNumbers" />
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid phone.</span>
+                                    </label>
+                                </div>
+                                <div class="grid_7">
+                                    <label class="message">
+                                        <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=10,max=999999)'></textarea>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*The message is too short.</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> 
+                            <div class="contact-form-buttons">
+                                <a href="#" type="submit" data-type="submit" class="btn-default" onclick="message">Send Message</a>
+                            </div>
+                        </fieldset>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-  <!--     <div class="container">
+    </div> 
+
+            
+        
+    
+<!--     <div class="container">
         <div class="wrapper5 wrapper7">
             <div class="row">
                 <div class="grid_12">
                     <h2><strong>feedback</strong></h2>
                 </div>
             </div>
-          <div class="row">
+            <div class="row">
                 <div class="grid_12">
                     <form id="contact-form">
                         <div class="contact-form-loader"></div>
