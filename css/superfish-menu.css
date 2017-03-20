@@ -33,7 +33,7 @@ nav {
   text-decoration: none;
   cursor: default;
   content: "\f0d7";
-  color: #345a80;
+  color: #f33d08;
   bottom: 5px;
   left: 50%;
   margin-left: -3px;
@@ -48,14 +48,14 @@ nav {
   display: block;
   -webkit-transition: 0 all ease;
   transition: 0 all ease;
-  color: #345a80;
+  color: #f33d08;
 }
 .sf-menu > li > a:hover {
-  background: #345a80;
+  background: #f33d08;
   color: #ffffff;
 }
 .sf-menu > li > a:active {
-  background: #345a80;
+  background: #f33d08;
   color: #ffffff;
 }
 .sf-menu > li + li {
@@ -67,7 +67,7 @@ nav {
 .sf-menu .first.current > a:before {
   display: block;
   content: '';
-  background: #345a80;
+  background: #f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -80,7 +80,7 @@ nav {
 .sf-menu .first > a:hover:before {
   display: block;
   content: '';
-  background: #345a80;
+  background: #f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -95,7 +95,7 @@ nav {
 .sf-menu .last.sfHover > a:before {
   display: block;
   content: '';
-  background: #345a80;
+  background: #f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -108,7 +108,7 @@ nav {
 .sf-menu .last > a:hover:before {
   display: block;
   content: '';
-  background: #345a80;
+  background:#f33d08;
   height: 62px;
   width: 1000px;
   position: absolute;
@@ -120,14 +120,14 @@ nav {
 }
 .sf-menu > li.current > a {
   color: #ffffff;
-  background: #345a80;
+  background: #f33d08;
 }
 .sf-menu > li.current > .sf-with-ul:after {
   color: #ffffff;
 }
 .sf-menu > li.sfHover > a {
   color: #ffffff;
-  background: #345a80;
+  background: #f33d08;
 }
 /* First level sub-menu styles
 ========================================================*/
@@ -139,7 +139,7 @@ nav {
   width: 218px;
   font: 700 14px/26px "Roboto Condensed", sans-serif;
   position: absolute;
-  background: #345a80;
+  background: #f33d08;
   text-align: left;
   padding: 18px 0 32px 0;
   z-index: 2;
@@ -171,18 +171,18 @@ nav {
   text-transform: uppercase;
 }
 .sf-menu ul li a:hover {
-  color: #345a80;
+  color: #f33d08;
   background: #ffffff;
 }
 .sf-menu ul > .sfHover > a {
-  color: #345a80;
+  color: #f33d08;
   background: #ffffff;
 }
 .sf-menu ul > .sfHover > a:after {
-  color: #345a80;
+  color: #f33d08;
 }
 .sf-menu ul li.sfHover > a {
-  color: #345a80;
+  color: #f33d08;
   background: #ffffff;
 }
 /* Second level sub-menu styles
@@ -192,7 +192,7 @@ nav {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  background: #345a80;
+  background: #f33d08;
   padding: 0 0 46px 0;
   z-index: 18;
   text-align: left;
