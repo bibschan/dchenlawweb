@@ -1,11 +1,7 @@
 <?php 
 require 'mail/PHPMailerAutoload.php';
 date_default_timezone_set('Etc/UTC');
- echo("<p>Message successfully sent!</p>");
 
- 
- 
- 
  
 $host = "smtp.gmail.com";
 $port = "587";
