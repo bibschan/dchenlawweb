@@ -3,15 +3,15 @@ require 'mail/PHPMailerAutoload.php';
 date_default_timezone_set('Etc/UTC');
 
  
-$host = "smtp.gmail.com";
+$host = "smtp.live.com";
 $port = "587";
-$username = "jeferson.rubert@gmail.com";
-$password = "";	
+$username = "souzabibiana@hotmail.com";
+$password = "readysteady";	
 	
 	$mail = new PHPMailer;
 
 
-	echo("teste : ".$_POST['name']);
+	
 	//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 	$mail->isSMTP();                                      // Set mailer to use SMTP
@@ -23,29 +23,22 @@ $password = "";
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = $port;                                    // TCP port to connect to
 
-	$mail->setFrom('contacts@dchenlawcorp.com', 'New Contact');
+	$mail->setFrom('contacts@dchenlawcorp.com', 'New contact from DchenLawcorp website');
 	$mail->addAddress($username);     // Add a recipient
 
 
 
 	$mail->isHTML(true);                                  // Set email format to HTML
 
-	$mail->Subject = "New contact from:".$_POST['name'];
-	$mail->Body    = 'Email:'.$_POST['email']." Message:".$_POST['message'];
+	$mail->Subject = "New contact from Dchenlawcorp: ".$_POST['name'];
+
+	$mail->Body    = "New message from the website!<br /><br />".'Email:'.$_POST['email']."<br />".'Phone: '.$_POST['phone']."<br />"."<br />". "Message:".$_POST['message'];
 
 	if(!$mail->send()) {
 		echo 'Message could not be sent.';
-		echo 'Mailer Error: ' . $mail->ErrorInfo;
 	} else {
 		echo 'Message has been sent';
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

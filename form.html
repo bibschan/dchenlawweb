@@ -47,17 +47,16 @@
             $("#contact-form").submit();
         }
 
-       function SubForm(){
+      function SubForm(){
             $.ajax({
                 url:'email.php',
                 type:'post',
                 method: 'post',
                 data:$('#contact-form').serialize(),
                 success:function(){
-                    alert("worked");
-                }
-            });
-        }
+                    alert("Your email has been sent");
+                }    ;
+        
 
     </script>
     <!--[if lt IE 9]>
@@ -146,8 +145,8 @@
                             </div>
                             <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> 
                             <div class="contact-form-buttons">
-                                <!--<a href="#" type="submit" data-type="submit" class="btn-default"  onclick="SubmitForm();">Send Message</a> -->
-                                  <input type="submit" value="Submit">
+                                <a href="#" type="submit" data-type="submit" class="btn-default"  onclick="SubmitForm();">Send Message</a> 
+                                <!--  <input type="submit" value="Submit"> -->
                             </div>
                         </fieldset>
                         <div class="modal fade response-message">
